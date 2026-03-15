@@ -1,0 +1,25 @@
+button{
+padding:10px 20px;
+border:none;
+background:#0077cc;
+color:white;
+cursor:pointer;
+border-radius:6px;
+transition:0.3s;
+}
+
+button:hover{
+background:#005fa3;
+}
+
+.card{
+border:1px solid #ddd;
+padding:20px;
+margin:20px;
+box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+}
+
+img{
+max-width:100%;
+border-radius:10px;
+}

@@ -1,0 +1,23 @@
+
+h1{
+font-size:36px;
+text-align:center;
+text-shadow:2px 2px 5px gray;
+}
+
+h2{
+font-size:28px;
+}
+
+p{
+font-size:18px;
+line-height:1.6;
+}
+
+.upper{
+text-transform:uppercase;
+}
+
+.center{
+text-align:center;
+}

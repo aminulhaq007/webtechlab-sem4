@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Card Layout</title>
+
+<link rel="stylesheet" href="../styles/components.css">
+
+<style>
+
+.container{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card{
+width:220px;
+border:1px solid #ccc;
+border-radius:10px;
+box-shadow:0 4px 8px rgba(0,0,0,0.2);
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+}
+
+.card-body{
+padding:10px;
+}
+
+.card button{
+background:#007BFF;
+color:white;
+border:none;
+padding:8px;
+cursor:pointer;
+}
+
+.card button:hover{
+background:#0056b3;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Card Components</h1>
+
+<div class="container">
+
+<div class="card">
+
+<img src="../images/backgrounds/bg1.jpg">
+
+<div class="card-body">
+
+<h3>Nature</h3>
+
+<p>Beautiful nature image example.</p>
+
+<button>Read More</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="../images/backgrounds/bg2.jpeg">
+
+<div class="card-body">
+
+<h3>Mountain</h3>
+
+<p>Another card design example.</p>
+
+<button>Read More</button>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

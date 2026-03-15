@@ -1,0 +1,12 @@
+.hover-scale:hover{
+transform:scale(1.1);
+transition:0.3s;
+}
+
+.rotate:hover{
+transform:rotate(10deg);
+}
+
+.shadow{
+box-shadow:4px 4px 10px gray;
+}
