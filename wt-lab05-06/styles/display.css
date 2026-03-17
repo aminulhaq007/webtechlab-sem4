@@ -1,0 +1,19 @@
+.block {
+display: block;
+background: lightblue;
+margin: 10px;
+padding: 10px;
+}
+
+.inline {
+display: inline;
+background: lightgreen;
+padding: 5px;
+}
+
+.inline-block {
+display: inline-block;
+background: orange;
+padding: 10px;
+margin: 5px;
+}

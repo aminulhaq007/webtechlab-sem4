@@ -1,0 +1,19 @@
+.main {
+float: left;
+width: 70%;
+padding: 20px;
+background: #eee;
+}
+
+.sidebar {
+float: right;
+width: 25%;
+padding: 20px;
+background: #ccc;
+}
+
+.clearfix::after {
+content: "";
+display: block;
+clear: both;
+}

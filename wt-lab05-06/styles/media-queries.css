@@ -1,0 +1,9 @@
+body {
+background: lightblue;
+}
+
+@media (max-width: 768px) {
+body {
+background: lightgreen;
+}
+}
