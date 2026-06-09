@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Horizon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <h1>Event Horizon</h1>
+      <p class="tagline">Your upcoming events, all in one place</p>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main>
+
+    <!-- Search Bar -->
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="Search events by name or date..." />
+    </section>
+
+    <!-- Add Event Form -->
+    <section class="form-section">
+      <h2>Add New Event</h2>
+      <div id="warningMsg" class="warning hidden">Please fill in all fields before adding an event.</div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="eventName">Event Name</label>
+          <input type="text" id="eventName" placeholder="Enter event name" />
+        </div>
+        <div class="form-group">
+          <label for="eventDate">Event Date</label>
+          <input type="date" id="eventDate" />
+        </div>
+        <div class="form-group full-width">
+          <label for="eventDesc">Event Description</label>
+          <textarea id="eventDesc" rows="3" placeholder="Describe the event..."></textarea>
+        </div>
+        <div class="form-group full-width">
+          <button id="addBtn" onclick="addEvent()">+ Add Event</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events List -->
+    <section class="events-section">
+      <h2>Upcoming Events</h2>
+      <div id="eventList" class="event-list">
+        <!-- Events will be inserted here by JavaScript -->
+      </div>
+      <p id="noEvents" class="no-events hidden">No events found.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made by <strong>Amin ul Haq</strong> &copy; <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

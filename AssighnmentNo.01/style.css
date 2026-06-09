@@ -1,0 +1,347 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0c29;
+  background-image: linear-gradient(135deg, #0f0c29 0%, #1a1a4e 50%, #24243e 100%);
+  min-height: 100vh;
+  color: #e0e0e0;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(101, 17, 203, 0.5);
+}
+
+.header-inner h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.header-inner .tagline {
+  font-size: 1rem;
+  color: #d0d8ff;
+  margin-top: 6px;
+}
+
+/* ===== Main ===== */
+main {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+/* ===== Section Headings ===== */
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #a78bfa;
+  margin-bottom: 16px;
+  border-left: 4px solid #6a11cb;
+  padding-left: 10px;
+}
+
+/* ===== Search Bar ===== */
+.search-section {
+  margin-bottom: 28px;
+}
+
+.search-section input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 2px solid #3a3a6e;
+  background: #1e1e4a;
+  color: #e0e0e0;
+  font-size: 0.97rem;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.search-section input:focus {
+  border-color: #6a11cb;
+}
+
+/* ===== Form Section ===== */
+.form-section {
+  background: #1a1a45;
+  border-radius: 14px;
+  padding: 28px 24px;
+  margin-bottom: 36px;
+  border: 1px solid #2e2e6e;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.3);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  color: #a78bfa;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 11px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #3a3a6e;
+  background: #12122e;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border 0.3s;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #6a11cb;
+}
+
+/* Date input calendar icon color fix */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* ===== Add Button ===== */
+#addBtn {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.3s;
+  box-shadow: 0 4px 14px rgba(101, 17, 203, 0.4);
+}
+
+#addBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(101, 17, 203, 0.6);
+}
+
+#addBtn:active {
+  transform: translateY(0px);
+}
+
+/* ===== Warning Message ===== */
+.warning {
+  background: #3d1c1c;
+  border: 1px solid #e05555;
+  color: #f87171;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== Events Section ===== */
+.events-section {
+  margin-bottom: 40px;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* ===== Event Card ===== */
+.event-card {
+  background: #1e1e4a;
+  border-radius: 14px;
+  padding: 20px 20px 16px;
+  border: 1px solid #2e2e6e;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #6a11cb, #2575fc);
+  border-radius: 14px 0 0 14px;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(101, 17, 203, 0.35);
+}
+
+/* Past Event Styling */
+.event-card.past {
+  background: #2a2a2a;
+  border-color: #444;
+  opacity: 0.75;
+}
+
+.event-card.past::before {
+  background: linear-gradient(180deg, #555, #777);
+}
+
+.event-card.past:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.event-card h3 {
+  font-size: 1.05rem;
+  color: #c4b5fd;
+  margin-bottom: 6px;
+  padding-right: 10px;
+}
+
+.event-card.past h3 {
+  color: #999;
+}
+
+.event-date {
+  font-size: 0.8rem;
+  color: #7c7cbc;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.event-card.past .event-date {
+  color: #666;
+}
+
+.past-badge {
+  background: #444;
+  color: #aaa;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 20px;
+  margin-left: 6px;
+}
+
+.event-desc {
+  font-size: 0.87rem;
+  color: #b0acd6;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.event-card.past .event-desc {
+  color: #777;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: transparent;
+  border: 1.5px solid #e05555;
+  color: #e05555;
+  padding: 7px 16px;
+  border-radius: 7px;
+  font-size: 0.83rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  font-weight: 500;
+}
+
+.delete-btn:hover {
+  background: #e05555;
+  color: #fff;
+  transform: scale(1.04);
+}
+
+/* No Events Message */
+.no-events {
+  text-align: center;
+  color: #555;
+  font-size: 0.95rem;
+  margin-top: 20px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  text-align: center;
+  padding: 18px;
+  color: #d0d8ff;
+  font-size: 0.88rem;
+}
+
+footer strong {
+  color: #fff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+  .header-inner h1 {
+    font-size: 1.9rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width {
+    grid-column: 1;
+  }
+
+  .event-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    margin: 20px auto;
+  }
+
+  .form-section {
+    padding: 20px 16px;
+  }
+}
